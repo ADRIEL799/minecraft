@@ -1,0 +1,110 @@
+/* Minecraft Discord Theme - Full Working Version */
+/* Background: https://i.imgur.com/YBxjFT9.jpeg */
+/* For BetterDiscord/Webcord/Vencord */
+
+:root {
+  /* Minecraft Color Palette */
+  --mc-dirt: #4a3a28;
+  --mc-dark-dirt: #3a2c1f;
+  --mc-deep-dirt: #2a1f15;
+  --mc-path: #5a4a38;
+  --mc-grass: #7CFC00;
+  --mc-lime: #55ff55;
+  --mc-gold: #ffaa00;
+  --mc-yellow: #ffff55;
+  --mc-diamond: #00BFFF;
+}
+
+/* Main Background with Dirt Texture */
+.appMount-3lHmkl {
+  background: url('https://i.imgur.com/YBxjFT9.jpeg') center/cover fixed !important;
+}
+
+/* Base Theme Colors */
+.theme-dark {
+  --background-primary: rgba(74, 58, 40, 0.85);
+  --background-secondary: rgba(58, 44, 31, 0.9);
+  --background-tertiary: rgba(42, 31, 21, 0.95);
+  --background-accent: var(--mc-path);
+  --background-floating: var(--mc-dark-dirt);
+  --channeltextarea-background: var(--mc-deep-dirt);
+  --background-modifier-hover: rgba(90, 74, 56, 0.3);
+  
+  /* Text Colors */
+  --text-normal: #e0e0e0;
+  --text-muted: #a0a0a0;
+  --header-primary: var(--mc-yellow);
+  --interactive-normal: var(--mc-lime);
+  --interactive-hover: var(--mc-gold);
+  --channels-default: #c0c0c0;
+}
+
+/* Server List - Grass to Dirt Gradient */
+.guilds-2JjMmN {
+  background: linear-gradient(to bottom, var(--mc-grass) 10%, var(--mc-dirt) 90%) !important;
+}
+
+/* Change "Direct Messages" to "Singleplayer World" */
+.container-1um7CU .header-2V-4Sw {
+  visibility: hidden;
+  position: relative;
+}
+.container-1um7CU .header-2V-4Sw::after {
+  content: "SINGLEPLAYER WORLD";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  color: var(--mc-yellow);
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Message Styling - Like Minecraft Signs */
+.message-2CShn3 {
+  background-color: var(--mc-path) !important;
+  border-radius: 4px !important;
+  border-left: 4px solid var(--mc-gold) !important;
+  margin: 4px 0;
+}
+
+/* Input Box - Minecraft Chat Style */
+.channelTextArea-1VQBuV {
+  background-color: var(--mc-deep-dirt) !important;
+  border: 2px solid var(--mc-path) !important;
+  border-radius: 0 !important;
+}
+
+/* Buttons - Minecraft Style */
+.button-1EGGcP {
+  background-color: var(--mc-path) !important;
+  color: var(--mc-yellow) !important;
+  border: 2px solid var(--mc-dark-dirt) !important;
+  border-radius: 0 !important;
+}
+.button-1EGGcP:hover {
+  background-color: var(--mc-gold) !important;
+  color: #000 !important;
+}
+
+/* Scrollbar - Diamond Blue */
+.thin-1ybCId {
+  scrollbar-color: var(--mc-diamond) var(--mc-dark-dirt) !important;
+}
+
+/* User Panel - Crafting Table Style */
+.panels-3wFtMD {
+  background-color: var(--mc-dark-dirt) !important;
+  border-top: 2px solid var(--mc-path) !important;
+}
+
+/* Blur Effect for Message Area */
+.chatContent-3KubbW {
+  background: rgba(42, 31, 21, 0.7) !important;
+  backdrop-filter: blur(5px);
+}
+
+/* Fix for Nitro/Shop Button */
+.tutorialContainer-2sGCg9 {
+  background-color: var(--mc-dark-dirt) !important;
+}
