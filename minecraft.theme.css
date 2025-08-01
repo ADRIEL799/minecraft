@@ -1,22 +1,45 @@
 /* Minecraft Discord Theme */
 /* For BetterDiscord / Web / Desktop */
+/* Background: https://i.imgur.com/YBxjFT9.jpeg */
 
-/* Base Background (Dirt) */
+/* Base Background (Dirt Texture) */
 .theme-dark {
-    --background-primary: #4a3a28; /* Dirt Brown */
-    --background-secondary: #3a2c1f; /* Darker Dirt */
-    --background-tertiary: #2a1f15; /* Deep Dirt */
-    --background-accent: #5a4a38; /* Path Brown */
-    --channeltextarea-background: #3a2c1f;
+    --background-primary: rgba(74, 58, 40, 0.7); /* Semi-transparent Dirt */
+    --background-secondary: rgba(58, 44, 31, 0.8); /* Darker Dirt */
+    --background-tertiary: rgba(42, 31, 21, 0.9); /* Deep Dirt */
+    --background-accent: #5a4a38;
+    --channeltextarea-background: rgba(58, 44, 31, 0.9);
+    --background-message-hover: rgba(90, 74, 56, 0.3);
 }
 
-/* Text Colors (Like Minecraft UI) */
+/* Custom Background Image */
+.appMount-3lHmkl {
+    background: url('https://i.imgur.com/YBxjFT9.jpeg') no-repeat center/cover !important;
+}
+/* Blur effect behind chat (optional) */
+.chat-3bRxxu {
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* Text Colors (Minecraft UI) */
 :root {
-    --text-normal: #e0e0e0; /* Light Gray (Minecraft Text) */
-    --text-muted: #a0a0a0; /* Gray (Disabled Text) */
-    --header-primary: #ffff55; /* Minecraft Yellow (Titles) */
-    --interactive-normal: #55ff55; /* Lime Green (Buttons) */
-    --interactive-hover: #ffaa00; /* Gold (Hover) */
+    --text-normal: #e0e0e0; /* Light Gray */
+    --text-muted: #a0a0a0;
+    --header-primary: #ffff55; /* Minecraft Yellow */
+    --interactive-normal: #55ff55; /* Lime Green */
+    --interactive-hover: #ffaa00; /* Gold */
+}
+
+/* Rename "Direct Messages" to "Singleplayer World" */
+.privateChannelsHeaderContainer-1UWASm::before {
+    content: "Singleplayer World";
+    color: #ffff55;
+    font-weight: bold;
+    font-size: 12px;
+}
+.privateChannelsHeaderContainer-1UWASm > div {
+    display: none; /* Hides original text */
 }
 
 /* Server List (Grass & Dirt) */
@@ -28,27 +51,27 @@
 .message-2CShn3 {
     background-color: #5a4a38 !important;
     border-radius: 4px !important;
-    border-left: 4px solid #ffaa00 !important; /* Gold Border */
+    border-left: 4px solid #ffaa00 !important;
 }
 
 /* Scrollbar (Diamond Blue) */
 .thin-1ybCId.scrollerBase-289Jih {
-    scrollbar-color: #00BFFF #3a2c1f !important; /* Diamond Blue */
+    scrollbar-color: #00BFFF #3a2c1f !important;
 }
 
-/* User Panel (Like Crafting Table) */
+/* User Panel (Crafting Table Style) */
 .panels-3wFtMD {
-    background-color: #3a2c1f !important;
+    background-color: rgba(58, 44, 31, 0.8) !important;
     border-top: 2px solid #5a4a38 !important;
 }
 
-/* Input Box (Like Chat in Minecraft) */
+/* Input Box (Minecraft Chat) */
 .channelTextArea-1VQBuV {
-    background-color: #2a1f15 !important;
+    background-color: rgba(42, 31, 21, 0.9) !important;
     border: 2px solid #5a4a38 !important;
 }
 
-/* Buttons (Like Minecraft Buttons) */
+/* Buttons (Minecraft Buttons) */
 .button-1EGGcP {
     background-color: #5a4a38 !important;
     color: #ffff55 !important;
